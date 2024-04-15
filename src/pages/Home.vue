@@ -22,7 +22,7 @@
  export default {
     name: "AppHome"
  }
-
+ 
 </script>
 
 <style scoped>
