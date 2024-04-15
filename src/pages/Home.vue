@@ -19,10 +19,11 @@
 </template>
 
 <script>
+
  export default {
     name: "AppHome"
  }
- 
+
 </script>
 
 <style scoped>
@@ -83,7 +84,6 @@
     .left {
         padding-left: 30%;
     }
-
 
     #logo {
         text-align: center;
