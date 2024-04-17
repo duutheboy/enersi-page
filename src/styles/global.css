@@ -24,7 +24,7 @@ a {
 }
 
 a:hover {
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 .container {
@@ -33,5 +33,5 @@ a:hover {
 
 main {
     width: 100%;
-    height: calc(100vh - 104px);
+    height: calc(100vh - 120px);
 }

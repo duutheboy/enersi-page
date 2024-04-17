@@ -6,7 +6,12 @@
                     <h1 id="logo">Ener<span>SI</span></h1>
                 </div>
                 <div class="text-bot">
-                    <p id="logo">Transformando o futuro, <span>um watt de cada vez.</span></p>
+                    <p id="logo-snd">Transformando o futuro, <span>um watt de cada vez.</span></p>
+                    <a target="_blank" href="https://github.com/duutheboy/enersi-page">
+                        <div class="button-container">
+                            <p class="button">Junte-se a nós</p>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="right">
@@ -19,11 +24,9 @@
 </template>
 
 <script>
-
  export default {
     name: "AppHome"
  }
-
 </script>
 
 <style scoped>
@@ -31,10 +34,10 @@
     #img-home{
         filter: 
         drop-shadow(10px 0px 260px rgba(9, 255, 0, 0.686))
-        brightness(0.86)
-        contrast(170%)
-        saturate(200%);
-        animation: float 2s ease-in-out infinite;
+        brightness(1)
+        contrast(120%)
+        saturate(150%);
+        animation: float 3s ease-in-out infinite;
     }
 
     h1 {
@@ -52,11 +55,40 @@
         color: var(--cor-branco-default);
     }
 
-    p {
-        font-size: 1.1rem;
+    #logo-snd {
+        font-size: 1rem;
         color: var(--cor-branco-default);
         align-items: center;
         font-weight: bold;
+    }
+
+    .button-container {
+        width: 100%; /* Para garantir que o botão ocupe toda a largura */
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        margin-top: 8%;
+    }
+
+    .button {
+        width: 70%; /* Largura do retângulo */
+        height: 5rem; /* Altura do retângulo */
+        background-color: var(--cor-verde-default); /* Cor de fundo do retângulo */
+        border-radius: 100px; /* Raio da borda para criar cantos arredondados */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.09rem;
+        color: white; /* Cor do texto */
+        font-weight: bold; /* Peso da fonte */
+        cursor: pointer; 
+        text-shadow: 2px 2px 0px #55555585;
+        transition: 0.6s;
+    }
+
+    .button:hover {
+        -webkit-box-shadow: 0px 8px 60px -6px var(--cor-verde-default);
+        -moz-box-shadow: 0px 8px 60px -6px var(--cor-verde-default);
+        box-shadow: 0px 8px 60px -6px var(--cor-verde-default);
     }
 
     p span {

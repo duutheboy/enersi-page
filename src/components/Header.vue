@@ -54,7 +54,7 @@ export default {
     header {
         background-color: rgba(29, 29, 29, 0);
         width: 100%;
-        height: 52px;
+        height: 60px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -134,8 +134,8 @@ export default {
     ul li a {
         color: var(--cor-branco-default);
         transition: color 0.4s;
-        font-weight: bold;
-        font-size: 1rem;
+        font-weight: light;
+        font-size: 0.9rem;
     }
 
     ul li a:hover {
@@ -144,7 +144,7 @@ export default {
 
     @media (min-width: 700px) {
         #menu,
-        #menu-logo,
+        #menu-logo,a
         #menu-overlay {
             display: none;
         }
@@ -153,7 +153,7 @@ export default {
             display: flex;
             background-color: rgba(32, 32, 32, 0);
             position: static;
-            height: 52px;
+            height: 60px;
             width: auto;
             align-items: center;
             justify-content: center;
